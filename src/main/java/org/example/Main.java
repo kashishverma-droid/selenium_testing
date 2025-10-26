@@ -14,7 +14,7 @@ public class Main{
 
         WebDriver driver= new ChromeDriver();
     //    driver.navigate("https://www.amazon.in/");//navigate
-        driver.navigate().to("https://www.amazon.in/");
+        
         driver.manage().window().maximize();
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("i phone");
         driver.findElement(By.id("twotabsearchtextbox")).submit();
