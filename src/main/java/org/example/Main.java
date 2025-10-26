@@ -7,12 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.awt.*;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main{
     public static void main(String[] args) {
 
         WebDriver driver= new ChromeDriver();
+    
         driver.navigate().to("https://www.amazon.in/");
         driver.manage().window().maximize();
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("i phone");
